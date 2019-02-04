@@ -34,8 +34,8 @@
       }
     </script>
     <script>
-        function myFunctionsearch() {
-          window.open("https://www.google.com/search?source=hp&ei=gyhYXI6EFa2qgwf60qHQDw&q=web+development&oq=web&gs_l=psy-ab.1.1.35i39l2j0i67l3j0i131j0i67j0l3.1825.4969..6195...1.0..0.382.1291.0j1j3j1......0....1..gws-wiz.....0..0i131i67j0i10i67.KtkwyZrUaOk");
+        function myFunctionsignin() {
+          window.open("https://accounts.google.com/signin/v2/identifier?passive=1209600&continue=https%3A%2F%2Faccounts.google.com%2Fb%2F0%2FAddMailService&followup=https%3A%2F%2Faccounts.google.com%2Fb%2F0%2FAddMailService&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
         }
     </script>
 </head>
@@ -48,14 +48,14 @@
         <li><a href="https://www.google.com/gmail/about/new/">Gmail</a></li>
         <li><a href="https://www.google.co.uk/imghp?hl=en&tab=wi">Images</a></li>
         <li>
-          <img class="image" src="/Users/lukeaimson/The_Odin_Project/HTML:CSS_Websites/Google-homepage/Icons/Googleiconsquare.png">
+          <img class="image" src="Images/Googleiconsquare.png">
         </li>
         <li class="image1">
           <img src="/Users/lukeaimson/The_Odin_Project/HTML:CSS_Websites/Google-homepage/Icons/notification (1).svg">
         </li>
       </ul>
       <div class="nav_button_container">
-        <button class="nav_button" type="button" onclick="alert('Are you sure, it could be dangerous ;-)')">Sign in</button>
+        <button class="nav_button" type="button" onclick="myFunctionsignin()">Sign in</button>
       </div>
     </nav>
   </header>
@@ -68,7 +68,7 @@
           <form id="Search-google" method="get" action="https://www.google.com/search">
           <div class="input_container">
             <div class="input"> 
-              <input type="text" name="q" id="goole_search"><div class="mic"><img onclick="startDictation()" src="/Users/lukeaimson/The_Odin_Project/HTML:CSS_Websites/Google-homepage/Icons/Googlemic.png" class="mic_grow">
+              <input type="text" name="q" id="goole_search"><div class="mic"><img onclick="startDictation()" src="Images/Googlemic.png" class="mic_grow">
               </div>
             </div>
           </div>
