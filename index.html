@@ -33,15 +33,20 @@
         }
       }
     </script>
+    <script>
+        function myFunctionsearch() {
+          window.open("https://www.google.com/search?source=hp&ei=gyhYXI6EFa2qgwf60qHQDw&q=web+development&oq=web&gs_l=psy-ab.1.1.35i39l2j0i67l3j0i131j0i67j0l3.1825.4969..6195...1.0..0.382.1291.0j1j3j1......0....1..gws-wiz.....0..0i131i67j0i10i67.KtkwyZrUaOk");
+        }
+    </script>
 </head>
 <body>
   <header>
     <nav class="nav_flex"> 
       <ul class="ul_flex">
-       <li><a href="">About</a></li>
-        <li class="nav-flex-Right"><a href="">Store</a></li>
-        <li><a href="">Gmail</a></li>
-        <li><a href="">Images</a></li>
+       <li><a href="https://www.google.ca/intl/en-GB/about/?fg=1&utm_source=google-GB&utm_medium=referral&utm_campaign=hp-header">About</a></li>
+        <li class="nav-flex-Right"><a href="https://store.google.com/?utm_source=hp_header&utm_medium=google_oo&utm_campaign=GS100042">Store</a></li>
+        <li><a href="https://www.google.com/gmail/about/new/">Gmail</a></li>
+        <li><a href="https://www.google.co.uk/imghp?hl=en&tab=wi">Images</a></li>
         <li>
           <img class="image" src="/Users/lukeaimson/The_Odin_Project/HTML:CSS_Websites/Google-homepage/Icons/Google_icon_square.png">
         </li>
@@ -68,7 +73,7 @@
           </div>
         </li>
         <li><div>
-            <button class="main-buttons" type="button">Google Search</button>
+            <button class="main-buttons" type="button" onclick="myFunctionsearch()">Google Search</button>
             <button class="main-buttons" type="button" onclick="alert('Feeling lucky are we? I know a good BettingShop...!')">Feeling Lucky</button>
            </div></li>
           </ul>
@@ -82,19 +87,16 @@
     <div class="footer-border">
       <ul class="footer_items_container">
           <li>
-            <a href="">Advertising</a>
-          </li>
-          <li>
-            <a href="">Business</a>
+            <a href="https://ads.google.com/intl/en_uk/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a>
           </li>
           <li class="footer-flex-right">
-            <a href="">About</a>
+            <a href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1#?modal_active=none">Business</a>
           </li>
           <li>
-            <a href="">Privacy</a>
+            <a href="https://policies.google.com/privacy?hl=en&gl=uk">Privacy</a>
           </li>
           <li>
-            <a href="">Terms</a>
+            <a href="https://policies.google.com/terms?hl=en&gl=uk">Terms</a>
           </li>
           <li>
             <a href="">Settings</a>
@@ -104,9 +106,3 @@
   </footer>
 </body>
 </html>
-
-<div class="popup" onclick="myFunction()">Click me to toggle the popup!
-    <span class="popuptext" id="myPopup">A Simple Popup!</span>
-  </div>
-
-  <div></div>
