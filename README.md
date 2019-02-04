@@ -1,1 +1,3 @@
 # Google-Clone
+
+For this project I created a clone of google. I did not copy and paste, I styled the page myself by using dev tools to view relevant sizes and colors etc. I uses flexbox to layout the page and added stylings of border, backgrounds, shadows and colors. I used the a tag to link to all the google pages. I also used pseudo elements to add hover styling options to my site. I added the Javascript function of window.open to link to a google search page to add some interactivity to the site. I also added the if function to enable dictation when the mic is clicked,  

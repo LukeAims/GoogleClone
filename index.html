@@ -20,10 +20,10 @@
           recognition.start();
     
           recognition.onresult = function(e) {
-            document.getElementById('transcript').value
+            document.getElementById('goole_search').value
                                      = e.results[0][0].transcript;
             recognition.stop();
-            document.getElementById('labnol').submit();
+            document.getElementById('Search-google').submit();
           };
     
           recognition.onerror = function(e) {
@@ -65,19 +65,23 @@
         <ul>
           <li><img class="google_image" src="Images/googlelogo_color_272x92dp.png"></li>
         <li>
+          <form id="Search-google" method="get" action="https://www.google.com/search">
           <div class="input_container">
             <div class="input"> 
-              <input type="text" id="goole_search"><div class="mic"><img src="/Users/lukeaimson/The_Odin_Project/HTML:CSS_Websites/Google-homepage/Icons/Google_mic.svg.png" onclick="startDictation()">
+              <input type="text" name="q" id="goole_search"><div class="mic"><img onclick="startDictation()" src="/Users/lukeaimson/The_Odin_Project/HTML:CSS_Websites/Google-homepage/Icons/Google_mic.svg.png" onclick="startDictation()">
               </div>
             </div>
           </div>
         </li>
-        <li><div>
-            <button class="main-buttons" type="button" onclick="myFunctionsearch()">Google Search</button>
+        <li>
+          <div>
+            <button class="main-buttons" type="submit" id="Search-google">Google Search</button>
             <button class="main-buttons" type="button" onclick="alert('Feeling lucky are we? I know a good BettingShop...!')">Feeling Lucky</button>
-           </div></li>
+          </div>
+        </form>
+        </li>
           </ul>
-      </div>  
+      </div> 
     </div>
   </main>
   <footer id="footer">
