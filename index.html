@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="Style.css">
+  <title>Document</title>
+  <script>
+      function startDictation() {
+    
+        if (window.hasOwnProperty('webkitSpeechRecognition')) {
+    
+          var recognition = new webkitSpeechRecognition();
+    
+          recognition.continuous = false;
+          recognition.interimResults = false;
+    
+          recognition.lang = "en-US";
+          recognition.start();
+    
+          recognition.onresult = function(e) {
+            document.getElementById('transcript').value
+                                     = e.results[0][0].transcript;
+            recognition.stop();
+            document.getElementById('labnol').submit();
+          };
+    
+          recognition.onerror = function(e) {
+            recognition.stop();
+          }
+    
+        }
+      }
+    </script>
+</head>
+<body>
+  <header>
+    <nav class="nav_flex"> 
+      <ul class="ul_flex">
+       <li><a href="">About</a></li>
+        <li class="nav-flex-Right"><a href="">Store</a></li>
+        <li><a href="">Gmail</a></li>
+        <li><a href="">Images</a></li>
+        <li>
+          <img class="image" src="/Users/lukeaimson/The_Odin_Project/HTML:CSS_Websites/Google-homepage/Icons/Google_icon_square.png">
+        </li>
+        <li class="image1">
+          <img src="/Users/lukeaimson/The_Odin_Project/HTML:CSS_Websites/Google-homepage/Icons/notification (1).svg">
+        </li>
+      </ul>
+      <div class="nav_button_container">
+        <button class="nav_button" type="button" onclick="alert('Are you sure, it could be dangerous ;-)')">Sign in</button>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="center_vertical">
+      <div class="inner_container">
+        <ul>
+          <li><img class="google_image" src="Images/googlelogo_color_272x92dp.png"></li>
+        <li>
+          <div class="input_container">
+            <div class="input"> 
+              <input type="text" id="goole_search"><div class="mic"><img src="/Users/lukeaimson/The_Odin_Project/HTML:CSS_Websites/Google-homepage/Icons/Google_mic.svg.png" onclick="startDictation()">
+              </div>
+            </div>
+          </div>
+        </li>
+        <li><div>
+            <button class="main-buttons" type="button">Google Search</button>
+            <button class="main-buttons" type="button" onclick="alert('Feeling lucky are we? I know a good BettingShop...!')">Feeling Lucky</button>
+           </div></li>
+          </ul>
+      </div>  
+    </div>
+  </main>
+  <footer id="footer">
+    <div class="footer_top">
+      <p class="uk_link" href="">United Kinkdom</p> 
+    </div>
+    <div class="footer-border">
+      <ul class="footer_items_container">
+          <li>
+            <a href="">Advertising</a>
+          </li>
+          <li>
+            <a href="">Business</a>
+          </li>
+          <li class="footer-flex-right">
+            <a href="">About</a>
+          </li>
+          <li>
+            <a href="">Privacy</a>
+          </li>
+          <li>
+            <a href="">Terms</a>
+          </li>
+          <li>
+            <a href="">Settings</a>
+          </li>   
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
+
+<div class="popup" onclick="myFunction()">Click me to toggle the popup!
+    <span class="popuptext" id="myPopup">A Simple Popup!</span>
+  </div>
+
+  <div></div>
