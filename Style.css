@@ -92,13 +92,14 @@ li {
 }
 
 li input {
-  width: 584px;
+  width: 484px;
+  text-align: left;
   border: 0;
   outline: none;
   background-color: transparent;
   border: none;
-  margin: 0;
-  padding: 0;
+  padding-left: 10px;
+  padding-right: 10px;
   color: rgba(0,0,0,.87);
 }
 
@@ -192,8 +193,6 @@ main {
   align-items: center;
 }
 
-/* footer border and buttons */
-
 .footer_top {
   display: flex;
   flex-basis: auto;
@@ -224,6 +223,8 @@ main {
   margin-bottom: -10px;
 }
 
+/* pseudo elements */
+
 a:hover {
   opacity: .85;
   text-decoration: underline;
@@ -244,4 +245,10 @@ a:hover {
     border: 1px solid #c6c6c6;
     box-shadow: 0 1px 1px rgba(0,0,0,0.1);
     color: #222;
+}
+
+.mic_grow:hover {
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
 }
